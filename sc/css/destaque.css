@@ -1,0 +1,54 @@
+.registro {
+    background-color: darkred;
+    color: white;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 400px;
+    right: 50px;
+    border-radius: 100%;
+    padding-top: 55px;
+    text-align: center;
+    font-weight: bold;
+    /* text-emphasis-style: sesame; */
+    text-decoration: none; 
+    text-transform: uppercase;
+    transform: rotateZ(5deg);
+    transition: 1s;
+}
+
+.hoje {
+    font-size: 24px;
+    color: yellow;
+}
+
+.registro:hover, .registro:focus {
+    background-color: darkblue;
+    transform: rotate(10deg);
+}
+
+/* Crie uma media query para telas de até
+740px de largura em que:
+
+1) a classe .registro seja modificada para:
+-largura: 130px
+-altura: 130px
+-tamanho da fonte: 14px
+-espaçamento superior: 45px
+
+2) a classe .hoje seja modificada para:
+-tamanho da fonte: 18px
+-cor do texto: de sua preferência */
+@media screen and (max-width: 740px) {
+    .registro {
+        width: 130px;
+        height: 130px;
+        font-size: 14px;
+        padding-top: 45px;
+    }
+    .hoje {
+        font-size: 18px;
+        color: white;
+    }
+}
+
