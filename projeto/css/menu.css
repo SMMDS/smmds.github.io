@@ -10,7 +10,7 @@ header {
 
 .menu { 
     list-style: none;
-    background-color: darkblue;
+    background-color: rgb(243, 6, 6);
     padding: 0;
     margin: 0;
 
@@ -31,10 +31,10 @@ header {
 /* Exercício 
 Criar uma regra CSS que permita, ao passar o mouse em cima do link ou quando acionar o link via teclado, mudar a aparência conforme abaixo:
 
--cor do texto: azul escuro
+-cor do texto: Vermelho escuro
 -cor do fundo: branco */
 .menu li a:hover, .menu li a:focus {
-    color: darkblue;
+    color: darkred;
     background-color: white;
 }
 
