@@ -1,0 +1,117 @@
+/* Alterando o Box Model padrão para TODOS os seletores */
+* { box-sizing: border-box; }
+
+body {
+    background-color: lightgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Reset dos espaços */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Exercício:
+Criar uma regra CSS para a tag H1 em que a aparência
+fique de acordo com as características a seguir:
+
+-Cor de fundo preta
+-Cor do texto branca
+-Sem margem
+-Espaçamento interno à esquerda de 12px */
+/* h1 {
+    background-color: rgb(109, 2, 2);
+    color: rgb(252, 248, 248);
+    margin: 0;
+    padding-left: 12px;
+} */
+
+h1{
+    background-color: rgb(109, 2, 2);
+    color: rgb(252, 248, 248);
+    text-shadow: black 1px 2px 2px;
+    /* text-align: center; */
+    border-bottom: solid 1px;
+    border-top: solid 1px;
+    padding-bottom: 5px;
+    margin: 0;
+    padding-left: 12px;
+}
+
+.introducao {
+    background-image: url(../imagens/tela-com-codigos.jpg);
+
+    /* padding-top: 220px;
+    padding-bottom: 200px;
+    padding-left: 0;
+    padding-right: 0; */
+
+    padding: 130px 0;
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.container {
+    width: 90%;
+    margin: 80px auto;
+    max-width: 1000px;
+}
+
+footer {
+    background-image: linear-gradient(#5c0707,  rgb(243, 6, 6));
+    color: white;
+    height: 100px;
+    font-weight: bold;
+    text-align: center;
+
+    /* Usando o flex para alinhar horizontalmente
+    e verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ajuste { padding-top: 10px; }
+
+.sistemas-em-producao section {
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.sistemas-em-producao {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 650px) {
+    .sistemas-em-producao {
+        display:block;
+        justify-content: space-between;
+        padding :10%;
+
+
+}
+.sistemas-em-producao section {
+    background-color: white;
+    width: 90%;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+
+}
+.flutuar-esquerda {
+    float: left;
+    width: 160px;
+    margin-right: 15px;
+}
+img{
+    width: 80%
+};
